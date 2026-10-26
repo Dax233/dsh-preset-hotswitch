@@ -1,0 +1,7 @@
+# dsh-preset-hotswitch — bundle patch layer
+# Inserts one host-level row whose tool switches the CALLING session's agent
+# preset through agentPresets.recompose (the registry's public mechanism),
+# then records agent-preset/selected so a restart keeps the new preset.
+- insert:
+    - id: preset-hotswitch
+      name: '@local/dsh-preset-hotswitch'

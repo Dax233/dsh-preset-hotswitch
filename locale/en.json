@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Preset Hotswitch",
+    "description": "Hot-switch the calling session to another agent preset after it has started (experimental: bypasses the blank-session-only rule); the recorded selection survives a restart."
+  }
+}

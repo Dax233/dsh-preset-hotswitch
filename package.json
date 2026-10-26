@@ -1,0 +1,52 @@
+{
+  "name": "@local/dsh-preset-hotswitch",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Hot-switch the calling DSH session's agent preset after its first turn through the agentPresets.recompose service (experimental: bypasses the blank-session-only rule); the recorded selection survives a restart.",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "locale/*.json",
+    "icon.svg",
+    "tests/**"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22",
+    "dsh": "^0.2.1-rc.3"
+  },
+  "scripts": {
+    "test": "node --test tests/hotswitch.test.mjs"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "agent-preset",
+    "preset",
+    "hot-switch",
+    "cordis"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dax233/dsh-preset-hotswitch.git"
+  },
+  "homepage": "https://github.com/Dax233/dsh-preset-hotswitch#readme",
+  "bugs": {
+    "url": "https://github.com/Dax233/dsh-preset-hotswitch/issues"
+  }
+}
